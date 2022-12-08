@@ -11,8 +11,6 @@ int main(){
         matrix[i] = (int *) malloc(SIZE * sizeof(int));
     }
 
-    int first_line = 1;
-    
     while(1){
         char c = ' ';
         scanf("%c", &c);
@@ -33,14 +31,9 @@ int main(){
             scanf("%d", &j);
 
             int ans = function_2(matrix, i, j);
-            if(first_line){
-                first_line = 0;
-            }else{
-                printf("\n");
-            }
             
-            if(ans == 1) printf("True");
-            else printf("False");
+            if(ans == 1) printf("True\n");
+            else printf("False\n");
             //printf("\n%d->%d = %d", i,j,ans);
         }
         else if(c == 'C'){
@@ -50,12 +43,7 @@ int main(){
 
             int ans = function_3(matrix, i, j);
             //printf("\n%d->%d = %d", i,j,ans);
-            if(first_line){
-                first_line = 0;
-            }else{
-                printf("\n");
-            }
-            printf("%d", ans);
+            printf("%d\n", ans);
         }
         else if(c == 'D'){
             break;
