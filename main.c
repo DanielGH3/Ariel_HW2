@@ -53,7 +53,6 @@ int main(){
     for (int i = 0; i < SIZE; i++)
         free(matrix[i]);
     free(matrix);
-    printf("\n");
     return 0;
 }
 
