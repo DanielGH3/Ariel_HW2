@@ -10,8 +10,7 @@ int function_3(int **matrix, int i, int j);
 /// @param final_matrix pass empty matrix, returns 2D matrix
 void function_1(int **final_matrix){
     int *matrix = (int *) malloc(SIZE * SIZE * sizeof(int));
-
-    int size = 1; //array size
+    
     int num_elements = 0;
     int value;
 
