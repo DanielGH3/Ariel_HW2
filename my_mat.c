@@ -12,10 +12,6 @@ void function_1(int **final_matrix){
     int *matrix = (int *) malloc(SIZE * SIZE * sizeof(int));
 
     int size = 1; //array size
-
-    int next_addition = 3; //how many slots to add to the 1D array next size inc
-    int current_2d_size = 1; //current size after converting to 2D array 
-
     int num_elements = 0;
     int value;
 
