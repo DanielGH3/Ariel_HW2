@@ -25,9 +25,9 @@ void function_1(int **final_matrix){
     }
     
     //fill 2d matrix, convert from 1D to 2D
-    for(int y = 0; y < current_2d_size; y++){
-        for(int x = 0; x < current_2d_size; x++){
-            final_matrix[y][x] = matrix[y * current_2d_size + x];
+    for(int y = 0; y < SIZE; y++){
+        for(int x = 0; x < SIZE; x++){
+            final_matrix[y][x] = matrix[y * SIZE + x];
         }
     }
 
