@@ -24,17 +24,6 @@ void function_1(int **final_matrix){
     {
         //inc current number of elemts in array
         num_elements++;
-
-        // If the matrix is full, reallocate memory to make it larger
-        if (num_elements > current_2d_size * current_2d_size)
-        {
-            size = size + next_addition; //inc 1d array size
-            current_2d_size++;
-            next_addition += 2;
-
-            matrix = realloc(matrix, size * sizeof(int));
-        }
-
         // Store the value in the matrix
         matrix[num_elements - 1] = value;
     }
